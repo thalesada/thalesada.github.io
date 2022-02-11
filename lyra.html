@@ -55,16 +55,55 @@
       <div id="main">
 	<div class="inner">
 	  <h1>The LYRA project</h1>
+	  Please feel free to use the movies below for talks or outreach purposes. If you do, please cite <a target="_blank" href="https://arxiv.org/abs/2110.06233">Gutcke et al. 2022</a><br>
 	  <hr />
-	  <h3>10<sup>9</sup>M<sub>sun</sub> halo forming an filament</h3>
-	  
+	  <h3>10<sup>9</sup>M<sub>⊙</sub> halo forming an filament</h3>
+	  <b>Projected gas density</b><br>
+	  We see the gas collapsing along a small dark matter filament<br>
+	  Reionization sets in around z~8, heating all the gas in this shallow potential and making it appear "fuzzy"
           <div class="row">
             <video class="image fit" control autoplay loop muted playsinline>
               <source src="movies/aum_gas_rho.mp4" type="video/mp4">
             </video>
+	  </div>
+	  <b>Projected gas metallicity</b><br>
+	  Halos above 10<sup>6</sup>M<sub>⊙</sub> are seeded with the first metals<br>
+	  Stars and supernovae in these "PopIII" halos then proceed to expel additional metals into their vicinity
+	  <div class="row">
+            <video class="image fit" control autoplay loop muted playsinline>
+              <source src="movies/aum_gas_metallicity.mp4" type="video/mp4">
+            </video>
+	  </div>
+	  <b>Projected gas temperature</b><br>
+	  Supernovae "twinkle" into existence in the densest gas<br>
+	  Individual hot bubbles expand and merge into a single hot super-bubble<br>
+	  Reionization can be seen as an increase in the background temperature after z~8
+          <div class="row">
+            <video class="image fit" control autoplay loop muted playsinline>
+              <source src="movies/aum_gas_temp.mp4" type="video/mp4">
+            </video>
           </div>
 	  
 	  <hr />
+
+	  <!-- <h3>Outflows in an isolated disk </h3> -->
+	  
+          <!-- <div class="row"> -->
+          <!--   <video class="image fit" control autoplay loop muted playsinline> -->
+          <!--     <source src="movies/Lyra_titled.mp4" type="video/mp4"> -->
+          <!--   </video> -->
+          <!-- </div> -->
+	  
+	  <!-- <hr /> -->
+	  <h3>Cosmological dwarf galaxy with resolved supernovae</h3>
+	  <p>The first cosmological LYRA (<a target="_blank" href="https://arxiv.org/abs/2110.06233">Gutcke et al. 2022</a>) simulation is a zoom-in on a 2x10<sup>9</sup> M<sub>⊙</sub> halo mass cosmological dwarf galaxy run to z=0 at 4 M<sub>⊙</sub> gas resolution with resolved supernova feedback. We investigate three simple subgrid implementations for the inhomogeneous chemical enrichment from Population III stars ("metal seeding") and compare them to constraints from Local Group dwarf galaxies. </p>
+
+	  <span class="image right"><img src="images/size_magnitude_comp.pdf" alt=""> </span>
+	  <p>The employed model, LYRA, is a novel high resolution galaxy formation model built for the moving mesh code <a target="_blank" href="https://arepo-code.org">AREPO</a>, which is marked by a resolved multi-phase interstellar medium, single stars and individual supernova events. The resulting reionization relic is characterized by a short (<1.5Gyr) star formation history that is repeatedly brought to a standstill by violent bursts of feedback. Star formation is reignited for a short duration due to a merger at z~4 and then again at z~0.2-0 after sustained gas accretion. </p>
+	  
+	  <p>Our model z=0 galaxy matches the stellar mass, size, stellar kinematics and metallicity relations of Local Group dwarf galaxies well. The dark matter profile does not exhibit a core in any version of the model. We show that the host halo masses of Population III stars affect the assembly history of dwarf galaxies. This manifests itself through the initial gaseous collapse in the progenitor halos, affecting the central density of the stellar component and through the accretion of luminous substructure.</p>
+
+	  <hr/>
 	  <h3>Superbubbles at high redshift</h3>	  
 	  
 	  <div class="row">
@@ -79,16 +118,8 @@
 	  </div>
 	  
 	  <hr />
-	  <!-- <h3>Outflows in an isolated disk </h3> -->
 	  
-          <!-- <div class="row"> -->
-          <!--   <video class="image fit" control autoplay loop muted playsinline> -->
-          <!--     <source src="movies/Lyra_titled.mp4" type="video/mp4"> -->
-          <!--   </video> -->
-          <!-- </div> -->
-	  
-	  <!-- <hr /> -->
-	  <h3>Model &amp; first paper</h3>
+	  <h3>Initial Model description</h3>
 	  <p>LYRA (<a target="_blank" href=method_paper.html>link to methods paper</a>) is a new high resolution galaxy formation model built within the framework of the cosmological hydro-dynamical moving mesh code <b>AREPO</b>. I have been developing it since the beginning of 2019. The model resolves the multi-phase interstellar medium down to 10 K. It forms individual stars sampled from the initial mass function (IMF), and tracks their lifetimes and death pathways individually. Single supernova (SN) blast waves	with variable energy are followed within the hydrodynamic calculation to interact with the surrounding interstellar medium (ISM).</p>
 	  
 	  <p>
@@ -143,7 +174,7 @@
           </ul>
 	  <ul class="copyright">
 	    <li>&copy;
-	      Thales Gutcke, July 2020. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+	      Thales Gutcke, Feb. 2022. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 	  </ul>
 	</div>
       </footer>
