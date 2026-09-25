@@ -1,191 +1,161 @@
-<!DOCTYPE HTML>
-<!--
-    Phantom by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  -->
-<html>
-  <head>
-    <title>Thales A. Gutcke</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/academicons-1.9.1/css/academicons.css"/>
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      
-      <!-- Header -->
-      <header id="header">
-	<div class="inner">
-	  
-	  <!-- Logo -->
-	  <a href="index.html" class="logo fix">
-	    <span class="symbol"><img src="images/bubbles.png" alt=""/></span>
-	    <span class="title">Thales A. Gutcke</span>
-	  </a>
-	  
-	  <!-- Nav -->
-	  <nav>
-	    | <a href="index.html" class="logo"> <span class="title">Home</span>	</a> |
-	    <a href="lyra.html" class="logo"> <span class="title">LYRA</span>	</a> |
-	    <a href="previous.html" class="logo"> <span class="title">Previous work</span>	</a> |
-	    <a href="about.html" class="logo"> <span class="title">About</span>	</a> |
-	    <a href="cv.html" class="logo"> <span class="title">CV</span>	</a> |
-	  </nav>
-	  
-	</div>
-      </header>
-      
-      <!-- Menu -->
-      <nav id="menu">
-	<h2>Menu</h2>
-	<ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="lyra.html">LYRA</a></li>
-	  <li><a href="previous.html">Previous work</a></li>
-	  <li><a href="about.html">About me</a></li>
-	  <li><a href="contact.html">Contact</a></li>
-	</ul>
-      </nav>
-      
-      <!-- Main -->
-      <div id="main">
-	<div class="inner">
-	  <h1>The LYRA project</h1>
-	  Please feel free to use the movies below for talks or outreach purposes. If you do, please cite <a target="_blank" href="https://arxiv.org/abs/2110.06233">Gutcke et al. 2022</a><br>
-	  <hr />
-	  <h3>10<sup>9</sup>M<sub>⊙</sub> halo forming in a filament</h3>
-	  <b>Projected gas density</b><br>
-	  We see the gas collapsing along a small dark matter filament<br>
-	  Reionization sets in around z~8, heating all the gas in this shallow potential and making it appear "fuzzy"
-          <div class="row">
-            <video class="image fit" control autoplay loop muted playsinline>
-              <source src="movies/aum_gas_rho.mp4" type="video/mp4">
-            </video>
-	  </div>
-	  <b>Projected gas metallicity</b><br>
-	  Halos above 10<sup>6</sup>M<sub>⊙</sub> are seeded with the first metals<br>
-	  Stars and supernovae in these "PopIII" halos then proceed to expel additional metals into their vicinity
-	  <div class="row">
-            <video class="image fit" control autoplay loop muted playsinline>
-              <source src="movies/aum_gas_metallicity.mp4" type="video/mp4">
-            </video>
-	  </div>
-	  <b>Projected gas temperature</b><br>
-	  Supernovae "twinkle" into existence in the densest gas<br>
-	  Individual hot bubbles expand and merge into a single hot super-bubble<br>
-	  Reionization can be seen as an increase in the background temperature after z~8
-          <div class="row">
-            <video class="image fit" control autoplay loop muted playsinline>
-              <source src="movies/aum_gas_temp.mp4" type="video/mp4">
-            </video>
-          </div>
-	  
-	  <hr />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LYRA — Thales A. Gutcke</title>
+  <meta name="description" content="LYRA: a galaxy formation model that resolves individual stars and supernovae. Simulation movies, papers and collaboration.">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-	  <!-- <h3>Outflows in an isolated disk </h3> -->
-	  
-          <!-- <div class="row"> -->
-          <!--   <video class="image fit" control autoplay loop muted playsinline> -->
-          <!--     <source src="movies/Lyra_titled.mp4" type="video/mp4"> -->
-          <!--   </video> -->
-          <!-- </div> -->
-	  
-	  <!-- <hr /> -->
-	  <h3>Cosmological dwarf galaxy with resolved supernovae</h3>
-	  <p>The first cosmological LYRA (<a target="_blank" href="https://arxiv.org/abs/2110.06233">Gutcke et al. 2022</a>) simulation is a zoom-in on a 2x10<sup>9</sup> M<sub>⊙</sub> halo mass cosmological dwarf galaxy run to z=0 at 4 M<sub>⊙</sub> gas resolution with resolved supernova feedback. We investigate three simple subgrid implementations for the inhomogeneous chemical enrichment from Population III stars ("metal seeding") and compare them to constraints from Local Group dwarf galaxies. </p>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="images/favicon.png" alt="">Thales A. Gutcke</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="index.html#sprout">SPROUT</a>
+      <a href="lyra.html" aria-current="page">LYRA</a>
+      <a href="cv.html">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-	  <span class="image right"><img src="images/size_magnitude_comp.pdf" alt=""> </span>
-	  <p>The employed model, LYRA, is a novel high resolution galaxy formation model built for the moving mesh code <a target="_blank" href="https://arepo-code.org">AREPO</a>, which is marked by a resolved multi-phase interstellar medium, single stars and individual supernova events. The resulting reionization relic is characterized by a short (<1.5Gyr) star formation history that is repeatedly brought to a standstill by violent bursts of feedback. Star formation is reignited for a short duration due to a merger at z~4 and then again at z~0.2-0 after sustained gas accretion. </p>
-	  
-	  <p>Our model z=0 galaxy matches the stellar mass, size, stellar kinematics and metallicity relations of Local Group dwarf galaxies well. The dark matter profile does not exhibit a core in any version of the model. We show that the host halo masses of Population III stars affect the assembly history of dwarf galaxies. This manifests itself through the initial gaseous collapse in the progenitor halos, affecting the central density of the stellar component and through the accretion of luminous substructure.</p>
+<main class="wrap">
 
-	  <hr/>
-	  <h3>Superbubbles at high redshift</h3>	  
-	  
-	  <div class="row">
-            <div class="col-6 col-12-medium">
-	      <video class="image fit" control autoplay loop muted playsinline>
-		<source src="movies/360deg_rotation_angle.mp4" type="video/mp4">
-	    </video></div>
-            <div class="col-6 col-12-medium">
-	      <video class="image fit" control autoplay loop muted playsinline>
-		<source src="movies/movie_projections.mp4" type="video/mp4">
-	    </video></div>
-	  </div>
-	  
-	  <hr />
-	  
-	  <h3>Initial Model description</h3>
-	  <p>LYRA (<a target="_blank" href=method_paper.html>link to methods paper</a>) is a new high resolution galaxy formation model built within the framework of the cosmological hydro-dynamical moving mesh code <b>AREPO</b>. I have been developing it since the beginning of 2019. The model resolves the multi-phase interstellar medium down to 10 K. It forms individual stars sampled from the initial mass function (IMF), and tracks their lifetimes and death pathways individually. Single supernova (SN) blast waves	with variable energy are followed within the hydrodynamic calculation to interact with the surrounding interstellar medium (ISM).</p>
-	  
-	  <p>
-	    <span class="image left"><img src="images/Sobel.png" alt=""> </span>
-	    I present the methods and apply the model to a 10<sup>10</sup> M<sub>⊙</sub> isolated halo in the first paper. There, I demonstrate that the majority of supernovae are Sedov-resolved at our fiducial gas mass resolution of 4 M<sub>⊙</sub>. I show that the SN feedback prescription self-consistently produces a hot phase within the ISM that drives significant outflows, reduces the gas density and suppresses star formation. </p>
-	  <p>
-	    <span class="image right"><img src="images/zoom_SN.png" alt="" ></span>
-	    Clustered SN play a major role in enhancing the effectiveness of feedback, because the majority of explosions occur in low density material. Accounting for variable SN energy affects the metallicity distribution function by altering the efficiency of metal mixing. Additionally, it alters the outflow behaviour, reducing the mass loading by a factor of 2 − 3 with respect to fixed energy models, thus allowing the galaxy to retain a higher fraction of mass and metals. LYRA makes it possible to use a comprehensive multi-physics ISM model directly in cosmological (zoom) simulations of dwarf and higher mass galaxies, which is the plan for the second paper.</p>
-	  
-	  <hr />
-	  <h3>Collaboration</h3>
-	  <p> LYRA was initiated and developed by</p>
-	  <ul>
-	    <li>Thales A. Gutcke</li>
-	    <li>Volker Springel</li>
-	    <li>R&uumldiger Pakmor</li>
-	    <li>Thorsten Naab</li>
-	  </ul>
-	  <p> LYRA will be used to investigate Milky Way satellites in collaboration with the <a href=http://www.icc.dur.ac.uk>ICC at the University of Durham</a></p>
-	  <ul>
-	    <li>Carlos Frenk</li>
-	    <li>Azadeh Fattahi</li>
-	    <li>Adrian Jenkins</li>
-	    <li>Ashley J. Kelly</li>
-	  </ul>
-	  <p> Cosmic rays and stellar winds will be implemented in LYRA by a team at the <a href=http://www.aip.de/en>Leibniz-Institute for Astrophysics Potsdam (AIP)</a> </p>
-	  <ul>
-	    <li>Christoph Pfrommer</li>
-	    <li>Philipp Girichidis</li>
-	    <li>Tobias Buck</li>
-	  </ul>
-	  <p>However, LYRA is a <a href=http://www.virgo.dur.ac.uk>Virgo Consortium</a> project. If you are interested in participating, please get in touch with me.<br>We had our first online meeting on January 11, 2021 (<a href=https://docs.google.com/document/d/1sophQweEZmGhDgPFpVIwaFk-jpx3RkX7HXJ1qQx3pxo/edit?usp=sharing>meeting transcript</a>)</p>
-	  
-	  <hr />
-	  <span class="image main"><img src="images/SN_banner.jpg" alt="" /></span>
-	  
-	  
-	</div> <!-- ends inner -->
-      </div> <!-- ends main -->
-      
-      <!-- Footer -->
-      <footer id="footer">
-	<div class="inner">
-	  <ul class="icons">
-	  <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#103;&#117;&#116;&#99;&#107;&#101;&#64;&#104;&#97;&#119;&#97;&#105;&#105;&#46;&#101;&#100;&#117;" class="icon"><i class="fas fa-envelope fa-3x"></i></a>
-            </li>
-            <li><a href=https://ui.adsabs.harvard.edu/search/q=author%3A(%22gutcke%2C%20thales%22)&sort=date%20desc%2C%20bibcode%20desc&p_=0 class="icon"><i class="ai ai-ads ai-3x"></i>
-            </a></li>
-            <li><a href=https://orcid.org/0000-0001-6179-7701 class="icon"><i class="ai ai-orcid ai-3x"></i>
-            </a></li>
-          </ul>
-	  <ul class="copyright">
-	    <li>&copy;
-	      Thales Gutcke, Feb. 2022. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-	  </ul>
-	</div>
-      </footer>
-      
+  <section class="page-hero">
+    <h1>LYRA</h1>
+    <p>A galaxy formation model that resolves individual stars and supernovae, built for the moving-mesh code <a href="https://arepo-code.org">AREPO</a>.</p>
+    <div class="bar" aria-hidden="true"></div>
+  </section>
+
+  <figure class="banner">
+    <img src="images/sn-banner.jpg" alt="Supernova-driven bubbles in simulated gas, rendered in orange tones" width="1800" height="621">
+  </figure>
+
+  <section class="section">
+    <h2>The model</h2>
+    <div class="body">
+      <p>I have been developing LYRA since 2019. It follows the interstellar medium in all its phases, down to 10 K. Stars form individually, sampled from the initial mass function, and each one's lifetime and fate is tracked. Every supernova explodes as its own blast wave, with variable energy, inside the hydrodynamic calculation.</p>
+      <p>At our fiducial resolution of 4 solar masses per gas cell, most supernovae are resolved. Their feedback builds a hot phase in the interstellar medium on its own, drives strong outflows, and regulates star formation. Clustered supernovae turn out to matter most: the majority explode into low-density gas, where they are far more effective.</p>
+      <p>LYRA makes it possible to run this detailed interstellar medium model directly in cosmological zoom-in simulations of dwarf galaxies and beyond.</p>
+      <div class="grid-2" style="margin-top:2rem">
+        <figure>
+          <img src="images/supernova-zoom.jpg" alt="Zoom into a region of simulated gas pressure with supernova remnants marked" width="1200" height="1080" loading="lazy">
+          <figcaption>Gas pressure around clustered supernovae. Circles mark individual remnants, stars mark young stars.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/sobel.jpg" alt="Edge-detected map of shock fronts in the simulated interstellar medium" width="1200" height="1080" loading="lazy">
+          <figcaption>Shock fronts from overlapping supernova blast waves.</figcaption>
+        </figure>
+      </div>
     </div>
-    
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    
-  </body>
+  </section>
+
+  <section class="section">
+    <h2>A dwarf galaxy, start to finish</h2>
+    <div class="body">
+      <p>The first cosmological LYRA run (<a href="https://arxiv.org/abs/2110.06233">Gutcke et al. 2022</a>) follows a dwarf galaxy in a 2×10⁹ solar-mass halo all the way to the present day. The resulting galaxy matches the stellar mass, size, kinematics and metallicity of Local Group dwarfs, and it shows that where the very first stars form shapes how a dwarf galaxy assembles.</p>
+       <div class="grid-2" style="margin-top:2rem">
+        <figure>
+          <img src="images/MV-Rhalf_lyra.jpg" alt="Comparing LYRA galaxies with Local Group dwarfs in size and brightness" width="1081" height="718" loading="lazy">
+          <figcaption>Comparing LYRA galaxies with Local Group dwarfs in size and brightness.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/magnitude-metallicity_lyra.jpg" alt="Comparing LYRA galaxies with Local Group dwarfs in brightness and chemistry" width="1081" height="718" loading="lazy">
+          <figcaption>Comparing LYRA galaxies with Local Group dwarfs in brightness and chemistry.</figcaption>
+	 </figure>
+	</div>
+  </section>
+
+  <section class="section" id="movies">
+    <h2>Movies</h2>
+    <div class="body wide">
+      <p style="max-width:var(--measure)">A 10⁹ solar-mass halo forming along a dark matter filament. Feel free to use these in talks or outreach; please cite <a href="https://arxiv.org/abs/2110.06233">Gutcke et al. 2022</a>.</p>
+      <div class="grid-3" style="margin-top:1.5rem">
+        <figure>
+          <video controls loop muted playsinline preload="metadata"><source src="movies/aum_gas_rho.mp4" type="video/mp4"></video>
+          <figcaption><strong>Gas density.</strong> Gas collapses along a small filament. Reionization around z≈8 heats the gas in this shallow potential and makes it look fuzzy.</figcaption>
+        </figure>
+        <figure>
+          <video controls loop muted playsinline preload="metadata"><source src="movies/aum_gas_metallicity.mp4" type="video/mp4"></video>
+          <figcaption><strong>Gas metallicity.</strong> Halos above 10⁶ solar masses are seeded with the first metals, which the first stars and supernovae then spread around them.</figcaption>
+        </figure>
+        <figure>
+          <video controls loop muted playsinline preload="metadata"><source src="movies/aum_gas_temp.mp4" type="video/mp4"></video>
+          <figcaption><strong>Gas temperature.</strong> Supernovae twinkle into existence in the densest gas; their hot bubbles expand and merge into one super-bubble.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Papers</h2>
+    <div class="body">
+      <ul class="list">
+	<li><a href="https://arxiv.org/abs/2510.05258">Self-interacting dark matter in LYRA</a><span class="aside">Gutcke et al. 2026</span></li>
+	<li><a href="https://arxiv.org/abs/2511.10582">Dark matter and baryons in LYRA</a><span class="aside">Sureda et al. 2026</span></li>
+	<li><a href="https://arxiv.org/abs/2511.21824">LYRA ultra-faint dwarfs</a><span class="aside">Brown et al. 2026</span></li>
+        <li><a href="https://arxiv.org/abs/2310.03790">Globular cluster formation in LYRA dwarfs</a><span class="aside">Gutcke 2024</span></li>
+        <li><a href="https://arxiv.org/abs/2209.03366">A suite of five dwarf galaxies</a><span class="aside">Gutcke et al. 2022b</span></li>
+        <li><a href="https://arxiv.org/abs/2110.06233">Cosmological LYRA</a><span class="aside">Gutcke et al. 2022a</span></li>
+        <li><a href="https://arxiv.org/abs/2010.07311">The method paper</a><span class="aside">Gutcke et al. 2021</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Collaboration</h2>
+    <div class="body">
+      <p>LYRA was initially developed by Thales A. Gutcke at the Max-Planck-Institute for Astrophysics in Garching with support from Volker Springel, Rüdiger Pakmor and Thorsten Naab.
+      <p>More recently, some improvements and analysis is being carried out by <a href="https://www.su.se/english/profiles/a/azfa5274">Azadeh Fattahi's group at Stockholm University</a>. Initial conditions were created at the Institute for Computational Cosmology, Durham University by Adrian Jenkins, Ashley J. Kelly and Azadeh Fattahi. </p>
+      <p>LYRA is a <a href="http://www.virgo.dur.ac.uk">Virgo Consortium</a> project. If you'd like to take part, <a href="mailto:gutcke@hawaii.edu">get in touch</a>.</p>
+    </div>
+  </section>
+
+  <section class="section" id="earlier">
+    <h2>Earlier work</h2>
+    <div class="body">
+      <div class="research">
+        <article>
+          <h3>A varying initial mass function in Milky Way-like galaxies</h3>
+          <p>Zoom-in simulations with a metallicity-dependent IMF show little change in morphology or star formation history, but noticeably different chemical enrichment, with alpha-element trends closer to observations. <a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.482..118G/abstract">Paper on ADS</a></p>
+        </article>
+        <article>
+          <h3>The circumgalactic medium in NIHAO</h3>
+          <p>Hot and cold gas around 86 simulated galaxies across five orders of magnitude in stellar mass, traced by O VI and H I, with predictions for how bipolar outflows shape the halo. <a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.464.2796G/abstract">Paper on ADS</a></p>
+        </article>
+        <article class="research-item">
+          <img src="images/elliptical.jpg" alt="Simulated elliptical galaxy" width="160" height="160" loading="lazy">
+          <div>
+            <h3>Quiescent elliptical galaxies</h3>
+            <p>A massive galaxy can become a red elliptical without a sudden quenching event: simply stopping hot gas from cooling moves it across the green valley in about a gigayear. <a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.466.4614G/abstract">Paper on ADS</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div>
+      <strong>Contact</strong><br>
+      <a href="mailto:gutcke@hawaii.edu">gutcke@hawaii.edu</a>
+    </div>
+    <div>
+      <a href="https://ui.adsabs.harvard.edu/search/q=author%3A(%22gutcke%2C%20thales%22)&amp;sort=date%20desc%2C%20bibcode%20desc">Publications on ADS</a><br>
+      <a href="files/cv.pdf">CV as PDF</a>
+    </div>
+    <div>© 2026 Thales A. Gutcke</div>
+  </div>
+</footer>
+
+</body>
 </html>
